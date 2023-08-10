@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    height: 100vh;
+    background-color: #e6e6e6;
+    color: black;
+    overflow: hidden;
+ 
+  
+}
+
+
+app-main-content{
+    display: flex;
+    height: 80%;
+    background-color: #E6E6E6;
+    width: 100vw;
+    
+}
+
+
+app-toolbar,app-footer{
+    display: flex;
+    height: 10%;
+    background-color:#E6E6E6;
+}
+
+
