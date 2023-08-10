@@ -7,13 +7,15 @@ import { CommunicationComponent } from './communication/communication.component'
 import { MenuComponent } from './menu/menu.component';
 import { MessageComponent } from './message/message.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainScreenComponent } from './main-screen/main-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CommunicationComponent,
     MenuComponent,
-    MessageComponent
+    MessageComponent,
+    MainScreenComponent
   ],
   imports: [
     BrowserModule,
