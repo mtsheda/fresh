@@ -45,3 +45,114 @@ app-footer-reject{
     text-align: center;
     align-content: center;
 }
+
+/* Default styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topBar {
+    height: 220px;
+    width: 350px;
+    display: flex;
+    margin-right: 2px;
+    background-color: white;
+    color: black;
+  }
+  
+  .orderOne {
+    display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 3%;
+  }
+ 
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .btn1,
+  .btn2 {
+    color: blue;
+    background-color: white;
+    width: 80px;
+    height: 25px;
+    border: none;
+    margin-top: 2%;
+  }
+  
+  .btn2 {
+    color: red;
+    margin-right: 10%;
+  }
+  
+  .datePicker {
+    color:lightgray;
+    padding-left: 150px;
+    font-size: smaller;
+  }
+
+  .information{
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+
+
+  /* Default styles for all screen sizes */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topBar {
+    height: 220px;
+    width: 350px;
+    display: flex;
+    margin-right: 2px;
+    background-color: white;
+    color: black;
+  }
+  
+  .orderOne {
+    display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 3%;
+  }
+ 
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .btn1,
+  .btn2 {
+    color: blue;
+    background-color: white;
+    width: 80px;
+    height: 25px;
+    border: none;
+    margin-top: 2%;
+  }
+  
+  .btn2 {
+    color: red;
+    margin-right: 10%;
+  }
+  
+  .datePicker {
+    color:lightgray;
+    padding-left: 150px;
+    font-size: smaller;
+  }
+
+  .information{
+    margin-top: 5%;
+    margin-left: 1%;
+  }

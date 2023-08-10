@@ -1,27 +1,327 @@
-*{
-    margin: 0;
-    height: 100vh;
-    background-color: #e6e6e6;
-    color: black;
-    overflow: hidden;
+// *{
+//     margin: 0;
+//     height: 100vh;
+//     background-color: #e6e6e6;
+//     color: black;
+//     overflow: hidden;
  
   
-}
+// }
 
 
-app-main-content{
-    display: flex;
-    height: 80%;
-    background-color: #E6E6E6;
-    width: 100vw;
+// app-main-content{
+//     display: flex;
+//     height: 80%;
+//     background-color: #E6E6E6;
+//     width: 100vw;
     
-}
+// }
 
 
-app-toolbar,app-footer{
+// app-toolbar,app-footer{
+//     display: flex;
+//     height: 10%;
+//     background-color:#E6E6E6;
+// }
+
+.container{
+
+    height: 100vh;
+    background-color: #e6e6e6;
     display: flex;
-    height: 10%;
-    background-color:#E6E6E6;
+    flex-direction: column;
+    padding:2%;
+}
+
+.menu{
+
+    height: 100%;
+   
+}
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    
+   
+  }
+  
+  .management {
+    display: flex;
+    align-items: center;
+  }
+  
+  .management mat-icon {
+    margin-right: 5px;
+  }
+  
+  .threeDots {
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .myspan {
+    
+    font-size: 16px;
+  }
+
+
+
+
+
+  /**{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+$primaryColor: #cccccc;
+$secondaryColor: #fff;
+$currencyColor: #03c04a;
+$dateColor: #88807b;
+
+$black: #060606;
+
+.main-container{
+    width: 820px;
+    margin: 0 auto;
+    border: 2px solid magenta;
+}
+
+.toolBar{
+    margin-top: 10px;
+    width: 100%;
+    height: 110px;
+    background: $primaryColor;
+}
+
+.arrow, .toolBar p, .menu{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.para, .order, .toolBar{
+    display: flex;
+}
+
+.menu{
+    margin-left: 660px;
 }
 
 
+.main-content{
+    width: 100%;
+    height: 398px;
+    background: $primaryColor;
+}
+
+.mainContentTypes{
+    width: 650px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.section-one p{
+    margin-left: 60px;
+}
+
+.input ::placeholder{
+    font-size: 18px;
+    font-weight: medium;
+    color: $blacck;
+    padding:2%
+}
+
+.btn{
+    width: 650px;
+    height: 50px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 60px;
+    background-color: #fff;
+}
+
+.place{
+    color: $blacck;
+}
+
+.date{
+    margin-top: 5px;
+    font-size: 2xp;
+    color: $dateColor;
+}
+
+.currency{
+    margin-left: 534px;
+    margin-top: -40px;
+    font-size: 25px;
+    color: $currencyColor;
+}
+
+.footer{
+    width: 100%;
+    height: 110px;
+    background: $primaryColor;
+}
+
+
+.section-two p{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.order{
+flex-direction: column;
+padding: 6px;
+
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+$primaryColor: #cccccc;
+$secondaryColor: #fff;
+$currencyColor: #03c04a;
+$dateColor: #88807b;
+
+$black: #060606;
+
+//toolbar
+.toolBar, .arrow-payment, .para, nav ul{
+    display: flex;
+}
+
+.toolBar p, .menu-bar, nav li{
+    margin-top: 30px;
+}
+
+.toolBar, .main-content, .footer{
+    background: $primaryColor;
+} 
+
+.mainContentTypes, .btn, .section-two p{
+    margin-top: 10px;
+}
+
+.mainContentTypes, .section-one p, .btn{
+    margin-left: 60px;
+}
+
+.section-two p, nav ul{
+    margin-left: 65px;
+}
+
+.toolBar, .footer, .para{
+    width: 100%;
+    height: 110px;
+}
+
+.currency, nav :hover {
+    color: $currencyColor;
+}
+
+.main-container{
+    width: 60%;
+    margin: 0 auto;
+   // border: 2px solid orangered;
+}
+
+.arrow{
+    margin-top: 28px;
+    margin-left: 25px
+}
+
+.arrow-payment{
+    width: 810px;
+}
+
+.menu-bar{
+    margin-right: 95px;
+}
+
+
+//main
+
+.mainContentTypes, .btn{
+    width: 650px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+
+.input ::placeholder{
+    font-size: 18px;
+    font-weight: medium;
+    color: $black;
+    padding:2%
+}
+
+.place, nav{
+    color: $black;
+}
+
+.date{
+    margin-top: 5px;
+    font-size: 12px;
+    color: $dateColor;
+}
+
+.currency{
+    margin-left: 534px;
+    margin-top: -40px;
+    font-size: 25px;
+}
+
+.order{
+padding: 6px;
+background-color: $secondaryColor;
+
+}
+
+//footer
+
+.footer{
+    nav{
+        ul{
+            justify-content: space-between;
+            width: 80%;
+           
+            li{
+              list-style: none; 
+              font-size: 20px;
+            }
+        }
+    }
+}
+
+nav{
+    cursor: pointer;
+}
+
+
+
+.footer{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    align-items: center;
+    padding-right: 5%;
+    margin-top: 30px;
+  }
+
+
+
+
+
+
+  
