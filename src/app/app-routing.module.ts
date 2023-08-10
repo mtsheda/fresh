@@ -9,6 +9,7 @@ import { UserDetailsComponent } from './message/user-details/user-details.compon
 import { PageComponent } from './page/page.component';
 import { Page2Component } from './menu/profile/page2/page2.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 
 
@@ -48,6 +49,9 @@ const routes: Routes = [
   path:"main screen", component:MainScreenComponent
 },
 
+{
+  path:"main content", component:MainContentComponent
+},
 
 
 
