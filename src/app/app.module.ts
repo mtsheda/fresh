@@ -8,9 +8,9 @@ import { MenuComponent } from './menu/menu.component';
 import { MessageComponent } from './message/message.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainScreenComponent } from './main-screen/main-screen.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { MainContentComponent } from './main-content/main-content.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+
 
 @NgModule({
   declarations: [
@@ -19,9 +19,9 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MenuComponent,
     MessageComponent,
     MainScreenComponent,
-    FooterComponent,
+   
     MainContentComponent,
-    ToolbarComponent
+  
   ],
   imports: [
     BrowserModule,
