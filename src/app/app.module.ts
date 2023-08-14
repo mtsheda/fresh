@@ -16,7 +16,10 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { IconMenuComponent } from './icon-menu/icon-menu.component';
 import { CollapsingMenuComponent } from './collapsing-menu/collapsing-menu.component';
 import { UserComponent } from './user/user.component';
-
+import { FormsModule } from '@angular/forms';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule} from '@angular/material/input';
+import { MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,11 @@ import { UserComponent } from './user/user.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatMenuModule ,
-    CanvasJSAngularChartsModule
+    CanvasJSAngularChartsModule,
+    FormsModule ,
+    MatDatepickerModule ,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

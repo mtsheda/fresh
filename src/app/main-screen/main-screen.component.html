@@ -1,82 +1,312 @@
-<div class="container">
-    <div class="menu">
-       <div class="toolbar">
-          <span class="initials">JD</span>
-          <span>Joe Doe<br>Farmer ID:856246521</span>
-          <!--<mat-icon>menu</mat-icon>-->
-        </div>
+<!-- 
+ <div class="container">
+  <div claas="menu">
+    
+  <div class="toolBar">
 
- 
-<!-- second row -->
+    <div class="leftBar">  
+     <b><label class="header">JD</label></b> 
+       
+    <div class="main">  
+    <label for="">Joe Doe</label>
+    <label for="">Farmer ID:8899/88</label>
+    </div>
+    
+    </div> 
+
+    <mat-icon>menu</mat-icon>
+  
+</div>
+
+<div class="menu">
 <div class="mainContainer">
-      
-        <h4>Product Category</h4>
-        <div class="boxes">
-          <div class="firstRow">
-             <button>Beverages</button>
-             <button>Containers</button>
-             <button>Dried Fruit</button>
-             <button>Fresh Vegetables</button>
-          </div>
-          <div class="secondRow">
-             <button> Dried Vegetables</button>
-             <button>Nuts And Seeds</button>
-             <button>Prepared & Preserved Foods</button>
-             <button>Fresh Fruits</button>
-          </div>
+<div class="heading">
+<label for="categoryDropdown">Product Category</label>
+</div>
 
-    </div>  
+<div class="dropdown">
+<select id="categoryDropdown" [(ngModel)]="selectedCategory">
+  <option value="">Select Your Category</option>
+  <option value="beverages">Beverages</option>
+  <option value="containers">Containers</option>
+  <option value="dried-fruit">Dried Fruit</option>
+  <option value="fresh-vegetables">Fresh Vegetables</option>
+  <option value="dried-vegetables">Dried Vegetables</option>
+  <option value="nuts-seeds">Nuts And Seeds</option>
+  <option value="prepared-foods">Prepared & Preserved Foods</option>
+  <option value="fresh-fruits">Fresh Fruits</option>
+</select> 
+</div>
+
+<div class="date">
+
+<mat-form-field >
+<mat-label>Start date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+
+<mat-form-field >
+<mat-label>End date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
 
 </div>
+<button class="btn">Filter</button>
+
+
+</div>   
+
+
+
+<div class="salesHistory">   
+      <div>
+        <canvasjs-chart  [options]="chartOptions" [styles]="{width: '100%', height:'300px' }" ></canvasjs-chart>    
+    </div>
+</div>
+<div class="menu">
+<div class="mainContainer">
+<div class="heading">
+<label for="categoryDropdown">Product Category</label>
+</div>
+
+<div class="dropdown">
+<select id="categoryDropdown" [(ngModel)]="selectedCategory">
+  <option value="">Select Your Category</option>
+  <option value="beverages">Beverages</option>
+  <option value="containers">Containers</option>
+  <option value="dried-fruit">Dried Fruit</option>
+  <option value="fresh-vegetables">Fresh Vegetables</option>
+  <option value="dried-vegetables">Dried Vegetables</option>
+  <option value="nuts-seeds">Nuts And Seeds</option>
+  <option value="prepared-foods">Prepared & Preserved Foods</option>
+  <option value="fresh-fruits">Fresh Fruits</option>
+</select> 
+</div>
+
+<div class="date">
+
+<mat-form-field >
+<mat-label>Start date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+
+<mat-form-field >
+<mat-label>End date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+</div>
+<button class="btn">Filter</button>
+
+
+</div>   
+
+
+
+<div class="salesHistory">   
+      <div>
+        <canvasjs-chart  [options]="chartOptions" [styles]="{width: '100%', height:'300px' }" ></canvasjs-chart>    
+    </div>
+</div>
+<div class="menu">
+<div class="mainContainer">
+<div class="heading">
+<label for="categoryDropdown">Product Category</label>
+</div>
+
+<div class="dropdown">
+<select id="categoryDropdown" [(ngModel)]="selectedCategory">
+  <option value="">Select Your Category</option>
+  <option value="beverages">Beverages</option>
+  <option value="containers">Containers</option>
+  <option value="dried-fruit">Dried Fruit</option>
+  <option value="fresh-vegetables">Fresh Vegetables</option>
+  <option value="dried-vegetables">Dried Vegetables</option>
+  <option value="nuts-seeds">Nuts And Seeds</option>
+  <option value="prepared-foods">Prepared & Preserved Foods</option>
+  <option value="fresh-fruits">Fresh Fruits</option>
+</select> 
+</div>
+
+<div class="date">
+
+<mat-form-field >
+<mat-label>Start date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+
+<mat-form-field >
+<mat-label>End date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+</div>
+<button class="btn">Filter</button>
+
+
+</div>   
+
+
+
+<div class="salesHistory">   
+      <div>
+        <canvasjs-chart  [options]="chartOptions" [styles]="{width: '100%', height:'300px' }" ></canvasjs-chart>    
+    </div>
+</div>
+
+<div class="footer"> <span>Home</span>
+  <span>Product List</span>
+  <span>Analytics</span>
+  <span>Profile</span>
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+  -->
+
+  <div class="container">
+    <div class="menu">
+      <div class="toolbar">
+        <span class="initials">JD</span>
+        <span>Joe Doe<br>Farmer ID:856246521</span>
     
-
-
-<!-- third row -->
-
-
-
-    <div class="salesHistory">
-        <label>Sales History</label>
-        
-        <div class="pie-chart">
-            <div class="slice slice-1" data-percentage="20">
-              <label class="slice-1-trans">1 - 20%</label>
-            </div>
-            <div class="slice slice-2" data-percentage="30">
-              <label class="slice-2-trans">2-23%</label>
-            </div>
-            <div class="slice slice-3" data-percentage="15">
-              <label class="slice-3-trans"> 3 - 15%</label>
-            </div>
-            <div class="slice slice-4" data-percentage="10">
-              <label class="slice-4-trans"> 4 - 10%</label>
-            </div>
-            <div class="slice slice-5" data-percentage="25">
-           
-            </div>
-          </div>
-          
-          
+     <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
       
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/message">Page 1</button>
+        <button mat-menu-item routerLink="/page2">Page 2</button>
+        <button mat-menu-item routerLink="/page3">Page 3</button>
+        <button mat-menu-item routerLink="/page1">Page 1</button>
+        <button mat-menu-item routerLink="/page2">Page 2</button>
+        <button mat-menu-item routerLink="/page3">Page 3</button>
+        
+        
+      </mat-menu>
+
+      </div>
+
+      
+      <div class="mainContent">
+        <div class="selectors">
+
+
+
+
+<label for="categoryDropdown"> Select Product Category</label>
+
+
+<div class="dropdown">
+<select id="categoryDropdown" [(ngModel)]="selectedCategory">
+  <!-- <option value="">Select Your Category</option> -->
+  <option value="beverages">Beverages</option>
+  <option value="containers">Containers</option>
+  <option value="dried-fruit">Dried Fruit</option>
+  <option value="fresh-vegetables">Fresh Vegetables</option>
+  <option value="dried-vegetables">Dried Vegetables</option>
+  <option value="nuts-seeds">Nuts And Seeds</option>
+  <option value="prepared-foods">Prepared & Preserved Foods</option>
+  <option value="fresh-fruits">Fresh Fruits</option>
+</select> 
+</div>
+
+<div class="date">
+
+<mat-form-field >
+<mat-label>Start date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+
+<mat-form-field >
+<mat-label>End date</mat-label>
+<input matInput [matDatepicker]="picker">
+<mat-hint>MM/DD/YYYY</mat-hint>
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+
+<button class="btn">Filter</button>
+        </div>
+
+  
+
+
+
+<div class="salesHistory">   
+      
+        <canvasjs-chart  [options]="chartOptions" [styles]="{width: '100%', height:'150px' }" ></canvasjs-chart>    
+      
+</div>
+</div>
+    
+    
+
+
+
+
+<div class="footer">
+
+  <span>Home</span>
+  <span>Product List</span>
+  <span>Analytics</span>
+  <span>Profile</span>
+</div>
+
+
         
 
 
+      
+      
 
-
-
- </div>
-
-    <div class="footer"> 
-      <span>Home</span>
-      <span>Product List</span>
-      <span>Analytics</span>
-      <span>Profile</span>
-    
-       
 
     </div>
 
 
-</div>
-
-
+  </div>

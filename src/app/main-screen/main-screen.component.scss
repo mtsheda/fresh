@@ -1,181 +1,134 @@
+
 *{
-    
-    color: black;
-    margin: 0;
+  background-color: #E6E6E6;
+  color: black;
+  margin: 0;
 
 }
-
-
-
-
-
+.salesHistory{
+  display: flex;
+  flex-direction: column; 
+  padding: 2%;
+  height: 50%;
  
 
-.header{
-display: flex;
-border: 1px solid,none;
-width: 50px;
-height: 50px;
-border-radius: 50%;
+}
+
+#categoryDropdown{
+width: 100%;
+height: 40px;
 background-color: white;
-align-items: center;
-justify-content: center;
-
-}
-
-.main{
-display: flex;
-flex-direction: column;
-gap:1%
-
 
 
 }
-.leftBar{
+.date{
 display: flex;
 flex-direction: row;
-gap:30px
+gap:2%;
+width: 100%;
 
 }
 
-  .mainContainer{
-        display: flex;
-        flex-direction: column; 
-        height: 35%;
-        padding: 2%;
-        }
+.selectors{
+display: flex;
+flex-direction: column;
+  height: 50%;
+  
+  gap: 3%;
+}
 
-        .firstRow,.secondRow{
-        display: flex;
-        flex-direction: row;
-        gap:8%;
-        
-        }
-        .firstRow, .secondRow {
-            display: flex;
-            height: 45%;
-            align-items: center;
-            justify-content: center;   
-        }
 
-        button{
 
-          width: 20%;
-          height: 95%;
-          background-color: white;
-          border: none;
-        }
-        
-        .boxes{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-           }
-
-        .salesHistory{
-                 display: flex;
-                  flex-direction: column;
-                 justify-content: center;
-                   align-items: center;
-                   height: 35%;
-                  }
-
-          .pie-chart {
-            position: relative;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: #f2f2f2;
-            overflow: hidden;
-          }
-          
-          .slice {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 50%;
-            height: 100%;
-            transform-origin: left;
-            clip: rect(0, 125px, 250px, 0);
-          }
-          .slice-1-trans{
-            position: absolute;
-            left: 0%;
-            top: 23%;
-            transform: rotate(358deg);
-            color: black;
-            z-index: 10;
-          }
-          
-          .slice-2 {
-            transform: rotate(72deg);
-            background-color: #45B7B4;
-          }
-          .slice-2-trans{
-            position: absolute;
-            left: 50%;
-            top: 20%;
-            transform: rotate(287deg);
-        }  
-          
-          .slice-3 {
-            transform: rotate(144deg);
-            background-color: #FFEE58;
-       
-          }
-        .slice-3-trans{
-            position: absolute;
-            left: 13%;
-            top: 25%;
-            transform: rotate(216deg);
-        }  
-    
-          .slice-4 {
-            transform: rotate(216deg);
-            background-color: #64B5F6;
-          }
-    
-          .slice-4-trans{
-            position: absolute;
-            left: 20%;
-            top: 13%;
-            transform: rotate(145deg);
-          }
-          
-          .slice-5 {
-            transform: rotate(288deg);
-            background-color: #EA7773;
-          }
-         
+  // .links a{
+  //     text-decoration: none;
+  //     color: black;
+  //     gap:1%;
+  //     padding: 2%;
    
+  // }
+  // .links{
+  // display: flex;
+  // flex-direction: row;
+  // height: 5%;
+  
+  // }
+ .btn{
+  
+  height: 30px;
+  width: 100%;
+  background-color:#0D99FF;
+  color: white;
+  border: none;
+ }
 
-    @media screen and (max-width:1080){
-      .toolBar {
-        display: flex;
-        flex-direction: row;
-        height: 8%;
-        // gap: 15%;
-        // justify-content: space-between;
-        padding: 2%
-      }
-    }
-    
-        
-      
 
-      
-      
-      
-      
-      
-      
-    .container{
 
-      height: 100vh;
-      background-color: #e6e6e6;
-      display: flex;
-      flex-direction: column;
-      padding:2%;
+
+
+@media screen and (max-width: 1080px) { 
+// .toolBar {
+//   display: flex;
+//   flex-direction: row;
+//   height: 8%;
+//   gap: 20%;
+//   padding: 2%;
+
+  
+// }
+.heading{
+  margin-right: 265px
   }
 
+
+
+
+
+
+
+
+  .salesHistory {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+// #categoryDropdown {
+//   width: 300px;
+//   margin-right: 90px;
+// }
+
+.date{
+  display: flex;
+  flex-direction: row;
+  // gap:2px
+}
+
+mat-form-field {
+
+  width: 50%;
+}
+
+
+
+
+
+
+.btn {
+  width: 350px;
+
+}
+}
+
+      
+    
+
+    
+    
+    
+    
+    
+    
+  
   
