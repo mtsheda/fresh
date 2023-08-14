@@ -11,6 +11,8 @@ import { Page2Component } from './menu/profile/page2/page2.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { UserComponent } from './user/user.component';
+import { ContentComponent } from './content/content.component';
+import { ProductListingComponent } from './product-listing/product-listing.component';
 
 
 
@@ -23,9 +25,18 @@ const routes: Routes = [
     path:"communication", component:CommunicationComponent
   }
 ,
+
+{
+  path:"product listing", component:ProductListingComponent
+},
 {
   path:"message", component:MessageComponent
 },
+
+{
+  path:"content", component:ContentComponent
+},
+
 {
   path:"menu", component:MenuComponent
 },

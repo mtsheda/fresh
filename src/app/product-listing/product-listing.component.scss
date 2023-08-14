@@ -1,0 +1,27 @@
+.row1, .row2, .row3 {
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}     
+
+.btn{
+    background-color:#0D99FF;
+    border-color: transparent;
+    border-radius: 3px;
+    display: flex;
+   
+    width: 30%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}  

@@ -1,0 +1,180 @@
+<!-- <div class="mainContainer"> 
+    <div class="menuBar">
+
+        <div class="leftBar">  
+        <mat-icon>keyboard_arrow_left</mat-icon>
+        <label>Product Listing</label>
+        </div>    
+        
+        <div class="icon">
+        <mat-icon>menu</mat-icon>
+        </div>
+        </div>
+
+        <div class="mainCont">
+            <p>Search</p>
+            <input type="text" placeholder="Type your search here" class="searchInput">
+        </div>
+    
+    
+<div class="menu">
+    <p>Products</p>     
+
+<div class="row1"> 
+  
+ <div class="picAndWord">  
+    <a routerLink="/Productlisting"><img src="../../assets/potatoes.jpg" class="image"></a>
+<label>potatoes</label>
+</div> 
+<div class="picAndWord"> 
+<img src="../../assets/crotons.jpg" class="image">
+<label>crotons</label>
+</div> 
+</div>
+
+<div class="row2">    
+    <div class="picAndWord">
+<img src="../../assets/simmons.jpg" class="image">
+    <label>simmons</label>
+</div>
+<div class="picAndWord"> 
+    <img src="../../assets/cabbage.jpg" class="image">
+    <label>cabbage</label>
+
+</div>
+
+
+</div> 
+
+<div class="row3"> 
+
+    <div class="picAndWord">
+<img src="../../assets/tomatoes.jpg" class="image">
+    <label>Tomatoes</label>
+    </div>
+
+    <div class="picAndWord">
+<img src="../../assets/pumking.jpg" class="image">
+    <label>Pumking</label>
+    </div>    
+
+</div>
+
+</div>
+
+<div class="toolbar">
+  <ul class="navbar-list">
+    <li class="navbar-item"><a href="#">Home</a></li>
+    <li class="navbar-item product-link"><a href="#">Product List</a></li>
+    <li class="navbar-item"><a href="#">Analytics</a></li>
+    <li class="navbar-item"><a href="#">Profile</a></li>
+  </ul>               
+  
+</div>
+
+
+
+
+-->
+
+<div class="container">
+    <div class="menu">
+
+        <div class="toolbar">
+            <div> >  Product</div>
+
+             
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+               <mat-icon>menu</mat-icon>
+             </button>
+             
+             <mat-menu #menu="matMenu">
+               <button mat-menu-item routerLink="/message">Home</button>
+               <button mat-menu-item routerLink="/page2">sales Mangement</button>
+               <button mat-menu-item routerLink="/page3">Product Listing</button>
+               <button mat-menu-item routerLink="/page1">Analytics</button>
+               <button mat-menu-item routerLink="/page2">Payments</button>
+               <button mat-menu-item routerLink="/Communication">Communication</button>
+               <button mat-menu-item routerLink="/">logout</button>
+               
+               
+             </mat-menu>
+               
+        </div>
+        <div class="mainContent">
+
+            
+
+            <div class="searchBar">
+                    <p>Search</p>
+                    <input type="text" placeholder="Type your search here" >
+            </div>
+            
+            <div class="products">
+
+                <div class="row1"> 
+  
+                    <div class="picAndWord">  
+                       <a routerLink="/Productlisting"><img src="../../assets/potatoes.jpg" class="image"></a>
+                       <label>potatoes</label>
+                   </div> 
+
+                   <div class="picAndWord"> 
+                   <img src="../../assets/crotons.jpg" class="image">
+                   <label>crotons</label>
+                   </div> 
+
+                   <div class="picAndWord">
+                         <img src="../../assets/simmons.jpg" class="image">
+                        <label>simmons</label>
+                    </div>
+
+                </div>
+
+                   
+<div class="row2">    
+    
+
+<div class="picAndWord"> 
+    <img src="../../assets/cabbage.jpg" class="image">
+    <label>cabbage</label>
+</div>
+
+    <div class="picAndWord">
+        <img src="../../assets/tomatoes.jpg" class="image">
+            <label>Tomatoes</label>
+    </div>
+
+    <div class="picAndWord">
+                <img src="../../assets/pumking.jpg" class="image">
+                <label>Pumking</label>
+    </div>    
+                
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <span>Home</span>
+            <span>Product List</span>
+            <span>Analytics</span>
+            <span>Profile</span>
+        </div>
+    
+
+
+
+
+

@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule} from '@angular/material/core';
+import { ContentComponent } from './content/content.component';
+import { ProductListingComponent } from './product-listing/product-listing.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { MatNativeDateModule} from '@angular/material/core';
     IconMenuComponent,
     CollapsingMenuComponent,
     UserComponent,
+    ContentComponent,
+    ProductListingComponent,
   
   ],
   imports: [
