@@ -10,6 +10,7 @@ import { PageComponent } from './page/page.component';
 import { Page2Component } from './menu/profile/page2/page2.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -28,6 +29,11 @@ const routes: Routes = [
 {
   path:"menu", component:MenuComponent
 },
+
+{
+  path:"user", component:UserComponent
+},
+
 {
   path:"profile", component:ProfileComponent
 },
@@ -55,16 +61,25 @@ const routes: Routes = [
 
 
 
-
-
-
-
-
-
+  { path: 'subitem1', component: PageComponent }, // Define your actual components
+  { path: 'subitem2', component: MessageComponent },
+  { path: 'subitem3', component: ProfileComponent },
 ];
+
+
+
+
+
+
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+  
+}

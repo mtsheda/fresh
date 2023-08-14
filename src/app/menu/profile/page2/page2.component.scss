@@ -1,26 +1,23 @@
 
   
-  .topBar {
-    height: 220px;
-    width: 350px;
+  .topBar, .bottomBar {
+    height: 47%;
     display: flex;
-    margin-right: 2px;
     background-color: white;
     color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   
+
   }
   
-  .orderOne {
-    display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-top: 1%;
-        margin-left: 3%;
-  }
  
   .btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
+    
   }
   
   .btn1,
@@ -44,10 +41,7 @@
     font-size: smaller;
   }
 
-  .information{
-    margin-top: 5%;
-    margin-left: 1%;
-  }
+  
 
 
 

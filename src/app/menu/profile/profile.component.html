@@ -1,54 +1,32 @@
 <div class="container">
     <div class="menu">
         <div class="toolbar">
-             <div>Profile</div>
-            <img class="mm" src="../../assets/OIP (1).jpg">
+             <div> >  Profile</div>
+
+             
+         <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+          </button>
+          
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/message">Home</button>
+            <button mat-menu-item routerLink="/page2">sales Mangement</button>
+            <button mat-menu-item routerLink="/page3">Product Listing</button>
+            <button mat-menu-item routerLink="/page1">Analytics</button>
+            <button mat-menu-item routerLink="/page2">Payments</button>
+            <button mat-menu-item routerLink="/Communication">Communication</button>
+            <button mat-menu-item routerLink="/">logout</button>
+            
+            
+          </mat-menu>
+            
         </div>
 
         <div class="mainContent">
-            <div class="formArea1">
-                <div class="details">
-                    <div>User Details</div>
-                    <img src="../../assets/751854.png">
-                </div>
-
-                <form>
-                    <div class="details2">
-                   <label>Name</label><br>
-                    <label>Surname</label><br>
-                    <label>Supplier/FarmerID</label><br>
-                    <label>Status</label><br>
-                    <label>Office Address</label>
-                    </div>
-
-            <div class="details1">
-            <label>Nell</label><br>
-            <label>Groen</label><br>
-             <label>225577</label><br>
-             <label>N/A</label><br>
-            <label>77 Boksburg</label>
-            </div>
+            <div class="table1">table 1</div>
+            <div class="table2">table2</div>
+        </div>
             
-        </form>
-        </div>
-        <div class="formArea">
-
-        <div class=" subheading">Contact Details</div>
-
-        <div class="form2">
-            <div class="details2">
-             <label>Contact Number</label><br>
-             <label>Office Number</label><br>
-             </div>
-
-               <div class="details1">
-                <label>0112569877</label><br>
-                <label>0115987463</label><br>
-                </div>
-
-            </div>
-        </div>
-        </div>
 
             <div class="footer">
                 <span>Home</span>

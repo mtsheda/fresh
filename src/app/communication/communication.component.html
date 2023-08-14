@@ -3,7 +3,23 @@
         <div class="toolbar">
             <span class="initials">JD</span>
             <span>Joe Doe<br>Farmer ID:856246521</span>
-          <!--<mat-icon>menu</mat-icon>-->
+        
+         <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+          </button>
+          
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/message">Page 1</button>
+            <button mat-menu-item routerLink="/page2">Page 2</button>
+            <button mat-menu-item routerLink="/page3">Page 3</button>
+            <button mat-menu-item routerLink="/page1">Page 1</button>
+            <button mat-menu-item routerLink="/page2">Page 2</button>
+            <button mat-menu-item routerLink="/page3">Page 3</button>
+            
+            
+          </mat-menu>
+
+          
           
         </div>
         <div class="mainContent">
@@ -11,7 +27,7 @@
             <input class="input1">
             Message:
             <input class="input2">
-            <button>send</button>
+            <button class="sendBtn">send</button>
            
             
         </div>
