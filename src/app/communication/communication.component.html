@@ -9,12 +9,13 @@
           </button>
           
           <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="/message">Page 1</button>
-            <button mat-menu-item routerLink="/page2">Page 2</button>
-            <button mat-menu-item routerLink="/page3">Page 3</button>
-            <button mat-menu-item routerLink="/page1">Page 1</button>
-            <button mat-menu-item routerLink="/page2">Page 2</button>
-            <button mat-menu-item routerLink="/page3">Page 3</button>
+            <button mat-menu-item routerLink="/message">Home</button>
+            <button mat-menu-item routerLink="/page2">Sale Management</button>
+            <button mat-menu-item routerLink="/page3">Product Listing</button>
+            <button mat-menu-item routerLink="/page1">Analytics</button>
+            <button mat-menu-item routerLink="/page2">Payments</button>
+            <button mat-menu-item routerLink="/page3">COmmunication</button>
+            <button mat-menu-item routerLink="/page3">Logout</button>
             
             
           </mat-menu>
@@ -27,7 +28,7 @@
             <input class="input1">
             Message:
             <input class="input2">
-            <button class="sendBtn">send</button>
+            <button class="sendBtn"  (click)="sendMessage()">send</button>
            
             
         </div>

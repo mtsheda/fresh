@@ -1,31 +1,7 @@
-.container{
-
-    height: 100vh;
-    background-color: #e6e6e6;
-    display: flex;
-    flex-direction: column;
-    padding:2%;
-}
 
 
-.menu{
 
-    height: 100%;
-    
-  
-}
 
-.toolbar,.footer{
-
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    
-    align-items: center;
-    
-    
-
-}
 
 .list{
 
@@ -39,29 +15,11 @@
    
 }
 
-a{
 
-    color: red;
-    text-decoration: none;
-}
 
-.initials{
 
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: bolder;
-    font-size: 1.5em;
-}
 
-.home{
 
-    color: red;
-}
 
 .input1{
 
@@ -77,15 +35,6 @@ a{
     border-radius: 2%;
 }
 
-button{
-
-    height: 6%;
-    background-color: blue;
-    border: none;
-    color: white;
-    font-size: 1em;
-    border-radius: 2%;
-}
 
 p{
 
@@ -95,12 +44,14 @@ p{
     display: flex;
     flex-direction: column;
     gap: 3em;
+    border-radius: 3px;
 
 }
 
 .paragraph2{
 
-    background-color: rgb(150, 237, 243);
+    background-color: #AFF4C6;
+    border-radius: 3px;
 }
 
 .redHeading{
@@ -108,18 +59,29 @@ p{
     color: red;
 }
 
-mat-icon{
 
-    background-color: white;
-    height: 43%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 10%;
+
+
+
+
+button{
+
+    height: 20%;
+  
+    border: none;
+    color: black;
+    font-size: 1.3em;
     border-radius: 2%;
+    
 }
 
-span{
 
-    height: 10%;
-}
+.addBtn{
+  
+    height: 30px;
+    width: 100%;
+    background-color:#0D99FF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+   }

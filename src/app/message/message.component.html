@@ -3,7 +3,23 @@
         <div class="toolbar">
             <span class="initials">JD</span>
             <span>Joe Doe<br>Farmer ID:856246521</span>
-           <!-- <mat-icon>menu</mat-icon>-->
+           
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+              </button>
+              
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/main screen">Home</button>
+                <button mat-menu-item routerLink="/profile">Profile</button>
+                <button mat-menu-item routerLink="/page2">Sale Management</button>
+                <button mat-menu-item routerLink="/content">Product Listing</button>
+                <button mat-menu-item routerLink="/user">Analytics</button>
+                <button mat-menu-item routerLink="/main content">Payments</button>
+                <button mat-menu-item routerLink="/communication">Communication</button>
+                <button mat-menu-item routerLink="/login">Logout</button>
+                
+                
+              </mat-menu>
         </div>
         <div class="list">
             <span>Communication<br>
@@ -12,26 +28,22 @@
             
             <p>
                 <span class="redHeading"> JOHN: 1ST LIFESTYLE FOODS</span>
-                <span>gdte opdui dcjydgdga yadaduuahda kuagxaxoad aldhayghduakdyfa <br>
-                kuaaljalidjo aaagdyakdi kadja;da uiadyfcao; aljciaklai
-                </span>
+                
             </p>
             <p class="paragraph2">
                 <span class="redHeading">You</span>
-                <span>ukachachiacjalicjailcjacjalicjikuachc
-                    <br>akjchaclacjalcacayjchaichakchakchucj<br>jahaukhcakchkach
-                    jagcacukhckahcakhcacydeu<br>
-                </span>
+               
             </p>
-           
+            <button class="addBtn">Add Message</button>
             
         </div>
+        
         <div class="footer">
 
-            <span>Home</span>
-            <span>Product List</span>
-            <span>Analytics</span>
-            <span>Profile</span>
+            <a routerLink="/main screen">Home</a>
+             <a routerLink="/content">Product List</a>
+             <a routerLink="/user">Analytics</a>
+             <a routerLink="/profile">Profile</a>
         </div>
 
 
